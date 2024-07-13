@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:padding="16dp"
+    tools:context=".view.MainActivity"
+    android:background="#F5F5F5">
+
+    <EditText
+        android:id="@+id/cityEditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Adicione o nome da cidade"
+        android:padding="10dp"
+        android:background="@drawable/item_background"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:layout_marginTop="10dp">
+
+        <Button
+            android:id="@+id/addCityButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Adicionar cidade"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"/>
+
+        <Button
+            android:id="@+id/openFavoritesButton"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="Ver Favoritos"
+            android:background="@drawable/button_background"
+            android:textColor="#FFFFFF"
+            android:layout_marginStart="10dp"/>
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/logoutButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"/>
+
+    <Button
+        android:id="@+id/clearSearchesButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Limpar Pesquisas"
+        android:layout_marginTop="16dp"
+        android:background="@drawable/button_background"
+        android:textColor="#FFFFFF"/>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:layout_marginTop="20dp">
+
+        <LinearLayout
+            android:id="@+id/citiesLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"/>
+    </ScrollView>
+</LinearLayout>

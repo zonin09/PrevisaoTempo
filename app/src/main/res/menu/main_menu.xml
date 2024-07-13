@@ -1,0 +1,11 @@
+<!-- main_menu.xml -->
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <!-- Item de menu para navegar para a tela de favoritos -->
+    <item
+        android:id="@+id/action_favorites"
+        android:title="Favoritos"
+        app:showAsAction="ifRoom" />
+
+</menu>
